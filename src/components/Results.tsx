@@ -19,6 +19,7 @@ const Results = ({displayResult, setDisplayResult}: AppProps) =>{
             .catch(err => {
                 console.log(err);
             });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return <div className="w-2/4 m-auto bg-gray-800 shadow-2xl rounded-lg overflow-hidden">
