@@ -11,7 +11,7 @@ A simple TypeScript React App displaying the current weather and a forecast for 
 
 ## Features
 
-You can type a city and search the weather for the next 3 days (including today's).
+You can type a city and search the weather for the next 3 days (from today's date).
 
 ## Installation
 
@@ -28,6 +28,6 @@ Simply do a `npm run build` at the root of the project
 
 ## Why wither ?
 
-Because i really love MINECRAFT and i had really no idea for the name.
-And here you can hear my anthem :
+Because i really love MINECRAFT and i had really no idea for the name.  
+And here you can hear my anthem :  
 [Fallen Kingdom](https://youtu.be/I-sH53vXP2A)
