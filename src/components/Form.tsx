@@ -10,14 +10,12 @@ const Form = ({setDisplayResult} : {setDisplayResult:any}) =>{
 
         axios.get(`https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHERAPI_KEY}&q=${query}&aqi=yes&lang=fr`)
         .then(res => {
+            console.log(res.data);
             setDisplayResult(res.data);        
         })
         .catch(err => {
             console.log(err);
         });
-        
-
-        setDisplayResult(true);
     }
 
     return (

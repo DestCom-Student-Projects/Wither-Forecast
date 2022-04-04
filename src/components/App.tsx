@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App lg:h-screen w-screen bg-color-1 m-auto">
       <Header />
-      {displayResult ? <Results /> :  <Form setDisplayResult={setDisplayResult} />}
+      {displayResult ? <Results displayResult={displayResult} /> :  <Form setDisplayResult={setDisplayResult} />}
     </div>
   );
 }
