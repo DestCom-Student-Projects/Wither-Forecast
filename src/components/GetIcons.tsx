@@ -13,7 +13,12 @@ import drizzle from '../assets/images/weatherIcons/drizzle.svg';
 import cloudy from '../assets/images/weatherIcons/cloudy.svg';
 import clearDay from '../assets/images/weatherIcons/clear-day.svg';
 
-const GetIcons = ({code} : {code:number}) => {
+type AppProps = {
+    code: number;
+    who:string;
+  };
+
+const GetIcons = ({code, who} : AppProps) => {
 
     const giveIcon = (iconeAsked: number) => {
         switch(iconeAsked){
@@ -84,7 +89,7 @@ const GetIcons = ({code} : {code:number}) => {
               }
         };
 
-    return <img src={giveIcon(code)} alt={"Actual weather"} />;
+    return <img src={giveIcon(code)} alt={"Actual weather"} className={who === "curr" ? "h-vp-actual-img" : ""} />;
 }
 
 export default GetIcons;

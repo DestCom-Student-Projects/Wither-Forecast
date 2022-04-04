@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-import Header from './Header';
 import Form from './Form';
 import Results from './Results';
 
@@ -11,9 +10,8 @@ function App() {
   const [displayResult, setDisplayResult] = useState(false);
 
   return (
-    <div className="App lg:h-screen w-screen bg-color-1 m-auto">
-      <Header />
-      {displayResult ? <Results displayResult={displayResult} /> :  <Form setDisplayResult={setDisplayResult} />}
+    <div className="App lg:h-screen w-screen flex item-center m-auto bg-color-1">
+      {displayResult ? <Results displayResult={displayResult} setDisplayResult={setDisplayResult} /> :  <Form displayResult={displayResult}  setDisplayResult={setDisplayResult} />}
     </div>
   );
 }

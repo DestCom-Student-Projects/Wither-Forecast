@@ -17,9 +17,9 @@ module.exports = {
         "1/2%": "50%",
       },
       height: {
-        "1/2": "50vh",
-        "1/4": "25vh",
-        colorSelector: "5vh",
+        "vp1/2": "50vh",
+        "vp1/4": "25vh",
+        "vp-actual-img": "30vh",
       },
     },
   },
