@@ -7,7 +7,7 @@ type AppProps = {
 
 const Current = ({curr} : AppProps) => {
     return (<>
-                <p className="text-gray-400 text-xl font-bold">Aujourd'hui</p>
+                <p className="text-gray-400 text-xl font-bold">Today</p>
                 <GetIcons code={curr.condition.code} who={"curr"} />  
                 <div className="flex justify-evenly my-4">
                     <div className="flex flex-col align-items">
@@ -15,8 +15,8 @@ const Current = ({curr} : AppProps) => {
                     </div>
                     <div className="">
                         <p className="text-gray-400 text-lg font-bold">{curr.condition.text}</p>
-                        <p className="text-gray-400 text-lg">Vit. du vent : {curr.wind_kph}km/h</p>
-                        <p className="text-gray-400 text-lg">Dir. du vent : <GetWinDir code={curr.wind_dir} /></p>
+                        <p className="text-gray-400 text-lg">Wind speed : {curr.wind_kph} km/h</p>
+                        <p className="text-gray-400 text-lg">Wind direction : <GetWinDir code={curr.wind_dir} /></p>
                     </div>
                 </div>
             </>)

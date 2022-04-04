@@ -10,7 +10,7 @@ function App() {
   const [displayResult, setDisplayResult] = useState(false);
 
   return (
-    <div className="App lg:h-screen w-screen flex item-center m-auto bg-color-1">
+    <div className="App lg:h-screen min-h-screen w-screen flex item-center m-auto bg-color-1 py-5">
       {displayResult ? <Results displayResult={displayResult} setDisplayResult={setDisplayResult} /> :  <Form displayResult={displayResult}  setDisplayResult={setDisplayResult} />}
     </div>
   );
